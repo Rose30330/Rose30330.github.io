@@ -3,28 +3,58 @@
     <head>
         <title>Contact</title>
     </head>
-    <style>
+    <style type="text/css">
         body{
             background:linear-gradient(indigo,teal);
             background-repeat: no-repeat;
-            height: 700px;
+            padding-bottom: 226px;
+            padding-left: 200px;
+            padding-right: 200px;
         }
         .al{
             text-align: center;
             color: bisque;
         }
-        .b{
-            text-align: center;
-        }
+        .form {
+		margin: 0 auto;
+		width: 210px;
+
+	    }
+
+	    .form label{
+		display: inline-block;
+		text-align: left;
+	    }
+
+	    .form input{
+		display: inline-block;
+		text-align: left;
+        padding-top: 0;
+        padding-left: 0;
+	    }
+
     </style>
 
     <body >
         <h1 class="al">Contact Us</h1>
         <p class="al">Got a question? We'd love to hear from 
         you. Send us a message and we'll respond as soon as posssible</p>
-        <label class="al">Name*</label>
-        <br>
-        <label>Email*</label>
-        <!--<input class="b" type="text" name="Name" id="Name">-->
+        <div class="form">
+            <label class="al">Name*</label>
+            <br>
+            <input type="text" name="Name" id="Name" style="width: 250px;">
+            <br>
+            <label class="al">Email address*</label>
+            <br>
+            <input type="email" name="Email" id="email" style="width: 250px;">
+            <br>
+            <label class="al">Message*</label> 
+            <br>       
+            <input  type="text" name="Message" id="Msg" style="width: 250px; height: 150px;">
+            <br>
+            <br>
+            <button style="background-color: rgb(109, 109, 160); width: 260px;" >Send Message</button>
+        </div>
+        
     </body>
-</html>
+</html

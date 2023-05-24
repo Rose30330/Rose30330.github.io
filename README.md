@@ -1,3 +1,3 @@
 # Rose30330.github.io
 
-![website](images/web.png)
+![website](images/resume.png)

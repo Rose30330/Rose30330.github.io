@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <style>
+        .st{
+            background: linear-gradient( to top right,rgb(223, 63, 129),rgb(100, 35, 138));
+            background-repeat: no-repeat;
+            padding-bottom: 100px;
+        }
+        .c{
+            background-color: white;
+            margin-right: 200px;
+            margin-left: 350px;
+            margin-top:200px ;
+            height: 400px;
+            width: 440px;
+            border-radius: 5px;
+        }
+        
+    </style>
+    <script>
+        function showAlert(){
+            alert("Submit Button clicked");
+        }
+    </script>
+    <body class="st">
+        <form action="contact.html" method="get" style="padding-left: 5px; border: 10px;">
+            <div class="c" style="padding: 50px;border: 10px;">
+            
+                <h1>Registration Form</h1>
+                <br>
+                <div style="display: flex;" >
+                    <div style="padding: 10px; margin-right: 10px;">
+                        <label>First Name
+                            <br>
+                            <input type="text" name="fn">
+                        </label>
+                    </div>
+                    <div style="padding: 10px;">
+                        <label>
+                            Last Name
+                            <br>
+                            <input type="text" name="ln">
+                        </label>
+                        <br><br>
+                    </div>
+                </div> 
+                <div style="display: flex;">
+                    <div style="padding: 10px;margin-right: 60px;">
+                        <label>Birthday
+                            <br>
+                            <input type="date" name="dt">
+                        </label>
+                        <br>
+                    </div>
+                
+                    <div style="margin-right: 10px; padding-top: 10px;padding-left: 10px;">
+                        <label>
+                            Gender
+                            <br>
+                            <input type="checkbox" name="Male" value="Male"/>Male
+                            <input type="checkbox" name="Female" value="Female"/>Female
+                        </label>
+                    </div>
+                </div> 
+                
+                <div style="display: flex;" >
+                    <div style="padding: 10px;padding-right: 10px;">
+                        <label>
+                            Email
+                            <br>
+                            <input type="email" name="email">
+                        </label>
+                    </div>
+                    <div style="margin-right: 10px; padding-top: 10px;padding-left: 10px;">
+                        <label>
+                            Phone Number
+                            <br>
+                            <input type="text" name="phno">
+                        </label>
+                    </div>
+                </div>  
+                <div>
+                    <div style="padding: 10px;">
+                        <label for="select">Subject</label>
+                        <br>
+                        <select name="select" id="select">
+                            <option value="select option">Choose Option</option>
+                            <option value="CSE">CSE:Computer Science Engineering</option>
+                            <option value="ECE">ECE:Electronics Engineering</option>
+                            <option value="CE">CE:Civil Engineering</option>
+                            <option value="EEE">EEE:Electrical and Electronics Engineering</option>
+                            <option value="ME">ME:Mechanical Engineering</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: flex;" >
+                    <div style="padding: 20px;">
+                        <input style="background-color: rgb(22, 152, 238); width: 150px;" type="submit"
+                        value="submit" onclick="showAlert()" name="Send Message">
+                    </div> 
+                </div>   
+            </div>
+        </form>
+    </body>
+</html>
